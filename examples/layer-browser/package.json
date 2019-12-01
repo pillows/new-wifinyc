@@ -1,0 +1,34 @@
+{
+  "name": "layer-browser",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start-local": "webpack-dev-server --env.es6 --progress --hot --open",
+    "start-local-luma": "webpack-dev-server --env.es6 --env.local --env.local-luma --progress --hot --open",
+    "start-local-es5": "webpack-dev-server --env.local --progress --hot --open",
+    "start-local-production": "webpack-dev-server --env.local --env.production --progress --hot --open"
+  },
+  "dependencies": {
+    "@loaders.gl/ply": "^1.3.3",
+    "@loaders.gl/gltf": "^1.3.3",
+    "@luma.gl/addons": "^8.0.0-alpha.5",
+    "@luma.gl/debug": "^8.0.0-alpha.5",
+    "colorbrewer": "^1.0.0",
+    "d3-request": "^1.0.6",
+    "d3-scale": "^3.1.0",
+    "extrude-polyline": "^1.0.6",
+    "react": "^16.3.0",
+    "react-autobind": "^1.0.6",
+    "react-dom": "^16.3.0",
+    "react-map-gl": "^5.0.0",
+    "react-stats-zavatta": "^0.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  }
+}
